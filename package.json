@@ -39,20 +39,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jciccio/react-table-with-csv-download.git"
+    "url": "https://github.com/jciccio/react-js-paginator.git"
   },
   "keywords": [
-    "table",
-    "log viewer",
-    "log",
-    "stats",
-    "csv download",
-    "html table",
-    "react table",
-    "react download csv",
-    "csv",
-    "customizable table"
+    "paginator",
+    "pagination",
+    "reactjs",
+    "paginate"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/jciccio/react-table-with-csv-download"
+  "homepage": "https://github.com/jciccio/react-js-paginator"
 }
