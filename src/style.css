@@ -1,0 +1,22 @@
+.paginator{
+  width: 100%;
+  float: left;
+  margin: 5px 0;
+}
+
+.pageBox{
+  float: left;
+  padding: 5px 10px;
+  border: 1px solid grey;
+}
+
+.pageBox button{
+  border: none;
+  font-size: 13px;
+  outline: none;
+}
+
+.activePage{
+  color: blue;
+  font-weight: bold;
+}
