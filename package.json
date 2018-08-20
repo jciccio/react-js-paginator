@@ -21,9 +21,9 @@
   },
   "devDependencies": {
     "babel-cli": "^6.2.0",
-    "babel-core": "^6.2.1",
+    "babel-core": "^6.26.3",
     "babel-eslint": "^6.1.2",
-    "babel-loader": "^6.2.0",
+    "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.5.1",
     "babel-preset-react": "^6.3.13",
     "babel-preset-stage-1": "^6.1.18",
@@ -31,9 +31,7 @@
     "babel-runtime": "^6.3.19",
     "style-loader": "^0.21.0",
     "css-loader": "^0.28.11",
-    "react-custom-scrollbars": "^4.2.1",
     "react-dom": "^16.3.2",
-    "react-icons": "^2.2.7",
     "babel-polyfill": "^6.26.0"
   },
   "repository": {
