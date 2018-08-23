@@ -1,6 +1,6 @@
 {
   "name": "react-js-paginator",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "React JS Paginator",
   "main": "build/index.js",
   "peerDependencies": {

@@ -12,7 +12,7 @@ Simple React JS Pagination component. Can be easily customized with CSS objects
 
 # How it looks
 
-![alt text](screenshots/paginator.png "React JS pagination")
+![alt text](screenshots/paginator_w_styles.png "React JS pagination")
 
 # Installation
 
@@ -44,6 +44,29 @@ For example:
 ```
 Once the page has changed, will trigger the callback function and send back the current page.
 
+Styles can be customized using `pageBoxStyle` and `activePageBoxStyle` props like:
+
+```javascript
+pageBoxStyle={{
+	border: 0, 
+	color: 'black', 
+	padding: 3, 
+	fontSize: 16
+}}
+```
+
+```javascript
+activePageBoxStyle={{
+	fontWeight: 'bolder', 
+	color: 'green'
+}}
+```
+
+Giving you as result:
+
+![alt text](screenshots/paginator_custom.png "React JS pagination custom")
+
+
 # Props
 
 | Name        | Type            | Mandatory | Description  
@@ -51,7 +74,9 @@ Once the page has changed, will trigger the callback function and send back the 
 | pageSize      | int | Y |How many elements will compose a page |
 | totalElements | int | Y   | Total elements you have in store |
 | onPageChangeCallback | function    | Y| function to be triggered when a page change happens |
-
+| pageBoxStyle | object    | N| style object for each pagination box |
+| activePageBoxStyle | object    | N| style object the active page |
+| maxPagesToDisplay | int    | N| how many pages will be displayed at the same time in the paginator (default 6)|
 
 # License 
 

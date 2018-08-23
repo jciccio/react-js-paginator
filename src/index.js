@@ -14,7 +14,7 @@ class Paginator extends Component {
 
     this.state = {
       currentPage: 1,
-      maxPagesToDisplay: 5
+      maxPagesToDisplay: (this.props.maxPagesToDisplay ? this.props.maxPagesToDisplay: 5)
     };
     //Props:
     // 1. Page size => pageSize
@@ -74,10 +74,15 @@ class Paginator extends Component {
 
   renderBox (number, symbol){
     let active = (number == this.state.currentPage) ? "activePage" : "";
+    let activeStyle = {}
+    if(active.length > 0 && this.props.activePageBoxStyle){
+      activeStyle = this.props.activePageBoxStyle;
+    }
     return (
-      <div className="pageBox" key={`page_${number}_${symbol}`}>
-        <button 
+      <div style={this.props.pageBoxStyle} className="pageBox" key={`page_${number}_${symbol}`}>
+        <button style={this.props.pageBoxStyle}
           className={`${active}`}
+          style={activeStyle}
           onClick={(e) => {this.changePage(number)}}
         >
           {symbol}

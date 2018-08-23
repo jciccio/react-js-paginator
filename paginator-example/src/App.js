@@ -14,17 +14,13 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="App" style={{paddingLeft:20, paddingRight:20}}>
         <header className="App-header">
           <h1 className="App-title">react-js-pagination Component</h1>
         </header>
         <h1> Current page: {this.state.currentPage} </h1>
-        <Paginator
-          pageSize={10}
-          totalElements={64}
-          onPageChangeCallback={(e) => {this.pageChange(e)}}
-        />
-       
+        
+       <p style={{textAlign:'left'}}>Out of the box: </p>
        <Paginator
           pageSize={10}
           totalElements={97}
@@ -35,6 +31,33 @@ class App extends Component {
           pageSize={10}
           totalElements={45}
           onPageChangeCallback={(e) => {this.pageChange(e)}}
+        />
+
+        <p style={{textAlign:'left'}}>Paginator with maxPagesToDisplay:</p>
+        <Paginator
+          pageSize={5}
+          totalElements={71}
+          maxPagesToDisplay={10}
+          onPageChangeCallback={(e) => {this.pageChange(e)}}
+        />
+
+        <p style={{textAlign:'left'}}>Paginator with maxPagesToDisplay and style: </p>
+        <Paginator
+          pageSize={5}
+          totalElements={71}
+          maxPagesToDisplay={10}
+          onPageChangeCallback={(e) => {this.pageChange(e)}}
+          pageBoxStyle={{border: 0, color: 'green', padding: 3, fontSize: 16}}
+        />
+
+        <p style={{textAlign:'left'}}>Paginator with maxPagesToDisplay and pagebox and active style: </p>
+        <Paginator
+          pageSize={5}
+          totalElements={71}
+          maxPagesToDisplay={10}
+          onPageChangeCallback={(e) => {this.pageChange(e)}}
+          pageBoxStyle={{border: 0, color: 'black', padding: 3, fontSize: 16}}
+          activePageBoxStyle={{fontWeight: 'bolder', color: 'green'}}
         />
 
       </div>
