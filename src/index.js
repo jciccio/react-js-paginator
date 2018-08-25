@@ -61,7 +61,7 @@ class Paginator extends Component {
     }
 
     for (let i = startingPage; 
-          i <= startingPage+this.state.maxPagesToDisplay && 
+          i < startingPage+this.state.maxPagesToDisplay && 
           i <= totalPages; 
           i++){
       pagesData.push(this.renderPage(i));

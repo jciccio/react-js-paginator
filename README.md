@@ -85,12 +85,15 @@ Giving you as result:
 
 # What's new
 
+0.1.1
+* Fixed issue where maxPagesToDisplay was showing one more page than the prop number
+
 0.1.0
 * New default style (less ugly)
 * Style customization properties enhanced
 
 0.0.8
-* Added props for to force first and last arrows
+* Added props to force first and last arrows
 * Added props to customize first and last symbols
 
 0.0.6
