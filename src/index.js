@@ -85,7 +85,7 @@ class Paginator extends Component {
       activeStyle = this.props.activePageBoxStyle;
     }
     return (
-      <div style={this.props.pageBoxStyle} className="pageBox" key={`page_${number}_${symbol}`}>
+      <div style={{...this.props.pageBoxStyle, ...activeStyle}} className={`pageBox ${active}`} key={`page_${number}_${symbol}`}>
         <button style={this.props.pageBoxStyle}
           className={`${active}`}
           style={activeStyle}

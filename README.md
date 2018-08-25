@@ -58,7 +58,8 @@ pageBoxStyle={{
 ```javascript
 activePageBoxStyle={{
 	fontWeight: 'bolder', 
-	color: 'green'
+	color: 'green', 
+	backgroundColor: '#d7f7dc'
 }}
 ```
 
@@ -83,6 +84,10 @@ Giving you as result:
 |lastArrowSymbol|string|N|customize last page symbol (default >>)|
 
 # What's new
+
+0.1.0
+* New default style (less ugly)
+* Style customization properties enhanced
 
 0.0.8
 * Added props for to force first and last arrows

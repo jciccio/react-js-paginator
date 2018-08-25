@@ -57,7 +57,7 @@ class App extends Component {
           maxPagesToDisplay={5}
           onPageChangeCallback={(e) => {this.pageChange(e)}}
           pageBoxStyle={{border: 0, color: 'black', padding: 3, fontSize: 16}}
-          activePageBoxStyle={{fontWeight: 'bolder', color: 'green'}}
+          activePageBoxStyle={{fontWeight: 'bolder', color: 'green', backgroundColor: '#d7f7dc'}}
           firstArrowAlwaysVisible
           lastArrowAlwaysVisible
         />
@@ -69,7 +69,7 @@ class App extends Component {
           maxPagesToDisplay={5}
           onPageChangeCallback={(e) => {this.pageChange(e)}}
           pageBoxStyle={{border: 0, color: 'black', padding: 3, fontSize: 16}}
-          activePageBoxStyle={{fontWeight: 'bolder', color: 'green'}}
+          activePageBoxStyle={{fontWeight: 'bolder', color: 'green', backgroundColor: '#d7f7dc'}}
           firstArrowAlwaysVisible
           lastArrowAlwaysVisible
           firstArrowSymbol={"First"}
