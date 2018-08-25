@@ -54,10 +54,26 @@ class App extends Component {
         <Paginator
           pageSize={5}
           totalElements={71}
-          maxPagesToDisplay={10}
+          maxPagesToDisplay={5}
           onPageChangeCallback={(e) => {this.pageChange(e)}}
           pageBoxStyle={{border: 0, color: 'black', padding: 3, fontSize: 16}}
           activePageBoxStyle={{fontWeight: 'bolder', color: 'green'}}
+          firstArrowAlwaysVisible
+          lastArrowAlwaysVisible
+        />
+
+        <p style={{textAlign:'left'}}>Paginator with custom first-last element: </p>
+        <Paginator
+          pageSize={5}
+          totalElements={71}
+          maxPagesToDisplay={5}
+          onPageChangeCallback={(e) => {this.pageChange(e)}}
+          pageBoxStyle={{border: 0, color: 'black', padding: 3, fontSize: 16}}
+          activePageBoxStyle={{fontWeight: 'bolder', color: 'green'}}
+          firstArrowAlwaysVisible
+          lastArrowAlwaysVisible
+          firstArrowSymbol={"First"}
+          lastArrowSymbol={"Last"}
         />
 
       </div>

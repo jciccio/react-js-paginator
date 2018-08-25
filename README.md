@@ -77,6 +77,19 @@ Giving you as result:
 | pageBoxStyle | object    | N| style object for each pagination box |
 | activePageBoxStyle | object    | N| style object the active page |
 | maxPagesToDisplay | int    | N| how many pages will be displayed at the same time in the paginator (default 6)|
+|firstArrowAlwaysVisible|present|N|showAlways the first page arrow|
+|lastArrowAlwaysVisible|present|N|showAlways the first page arrow|
+|firstArrowSymbol|string|N|customize first page symbol (default <<)|
+|lastArrowSymbol|string|N|customize last page symbol (default >>)|
+
+# What's new
+
+0.0.8
+* Added props for to force first and last arrows
+* Added props to customize first and last symbols
+
+0.0.6
+* Added functionality to hide arrows if first page or last page is visible
 
 # License 
 

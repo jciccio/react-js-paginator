@@ -52,18 +52,24 @@ class Paginator extends Component {
   renderRange(){
     let pagesData = [];
     let totalPages = this.getTotalPages();
-    let startingPage = this.state.currentPage - 2 > 0 ? this.state.currentPage - 2 : 1;
+    let startingPage = this.state.currentPage - parseInt(this.state.maxPagesToDisplay/2) > 0 ? this.state.currentPage - parseInt(this.state.maxPagesToDisplay/2) : 1;
     startingPage = totalPages - startingPage < this.state.maxPagesToDisplay ?
       startingPage - (this.state.maxPagesToDisplay - (totalPages - startingPage)) : startingPage;
 
-    pagesData.push(this.renderFirst());
+    if (startingPage != 1 || this.props.firstArrowAlwaysVisible){
+      pagesData.push(this.renderFirst());
+    }
+
     for (let i = startingPage; 
           i <= startingPage+this.state.maxPagesToDisplay && 
           i <= totalPages; 
           i++){
       pagesData.push(this.renderPage(i));
     }
-    pagesData.push(this.renderLast());
+
+    if (startingPage+this.state.maxPagesToDisplay < totalPages || this.props.lastArrowAlwaysVisible){
+      pagesData.push(this.renderLast());
+    }
     return pagesData;
   }
 
@@ -93,7 +99,13 @@ class Paginator extends Component {
 
   renderFirst(){
     if (this.getTotalPages() > this.state.maxPagesToDisplay){
-      return this.renderBox(1, "<<");
+      let symbol = "<<";
+      if(this.props.firstArrowSymbol)
+      {
+        symbol = this.props.firstArrowSymbol;
+      } 
+
+      return this.renderBox(1, symbol);
     }
     else{
       return null;
@@ -103,7 +115,12 @@ class Paginator extends Component {
   renderLast(){
     let totalPages = this.getTotalPages();
     if (totalPages > this.state.maxPagesToDisplay){
-      return this.renderBox(totalPages, ">>");
+      let symbol = ">>";
+      if(this.props.lastArrowSymbol)
+      {
+        symbol = this.props.lastArrowSymbol;
+      } 
+      return this.renderBox(totalPages, symbol);
     }
     else{
       return null;
