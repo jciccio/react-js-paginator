@@ -5,7 +5,6 @@ import "./style.css";
 /**
  * Paginator component
  *
- * @version 0.0.1
  * @author [Jose Antonio Ciccio](https://github.com/jciccio)
  */
 class Paginator extends Component {
@@ -53,21 +52,21 @@ class Paginator extends Component {
     let pagesData = [];
     let totalPages = this.getTotalPages();
     let startingPage = this.state.currentPage - parseInt(this.state.maxPagesToDisplay/2) > 0 ? this.state.currentPage - parseInt(this.state.maxPagesToDisplay/2) : 1;
+    
     startingPage = totalPages - startingPage < this.state.maxPagesToDisplay ?
-      startingPage - (this.state.maxPagesToDisplay - (totalPages - startingPage)) : startingPage;
+      startingPage - (this.state.maxPagesToDisplay - (totalPages - startingPage))+1 : startingPage;
 
     if (startingPage != 1 || this.props.firstArrowAlwaysVisible){
       pagesData.push(this.renderFirst());
     }
 
-    for (let i = startingPage; 
-          i < startingPage+this.state.maxPagesToDisplay && 
-          i <= totalPages; 
-          i++){
+    for (let i = startingPage; i < startingPage+this.state.maxPagesToDisplay && 
+    i <= totalPages; i++)
+    {
       pagesData.push(this.renderPage(i));
     }
 
-    if (startingPage+this.state.maxPagesToDisplay < totalPages || this.props.lastArrowAlwaysVisible){
+    if (startingPage+this.state.maxPagesToDisplay-1 < totalPages || this.props.lastArrowAlwaysVisible){
       pagesData.push(this.renderLast());
     }
     return pagesData;

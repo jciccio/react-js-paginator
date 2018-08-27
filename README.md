@@ -85,6 +85,9 @@ Giving you as result:
 
 # What's new
 
+0.1.3
+* Bug fixing: last page was not always being showed.
+
 0.1.1
 * Fixed issue where maxPagesToDisplay was showing one more page than the prop number
 
