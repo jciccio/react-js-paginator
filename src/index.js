@@ -7,6 +7,20 @@ import "./style.css";
  *
  * @author [Jose Antonio Ciccio](https://github.com/jciccio)
  */
+
+Paginator.propTypes = {
+  maxPagesToDisplay: PropTypes.number,
+  lastArrowAlwaysVisible: PropTypes.bool,
+  firstArrowAlwaysVisible: PropTypes.bool,
+  totalElements: PropTypes.number.isRequired,
+  pageSize: PropTypes.number.isRequired,
+  activePageBoxStyle: PropTypes.object,
+  pageBoxStyle: PropTypes.object,
+  firstArrowSymbol: PropTypes.string,
+  lastArrowSymbol: PropTypes.string,
+  onPageChangeCallback: PropTypes.func.isRequired
+};
+
 class Paginator extends Component {
   constructor(props) {
     super(props);

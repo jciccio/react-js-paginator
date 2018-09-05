@@ -85,6 +85,9 @@ Giving you as result:
 
 # What's new
 
+0.1.5
+* Typecheck added, minor tweaking and styling changes
+
 0.1.3
 * Bug fixing: last page was not always being showed.
 
