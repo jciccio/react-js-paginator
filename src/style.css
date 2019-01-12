@@ -3,20 +3,20 @@
   float: left;
 }
 
-.pageBox{
+.paginator .pageBox{
   float: left;
   padding: 5px 10px;
   border: 1px solid #e8e9ea;
   margin-left: -1px;
 }
 
-.pageBox button{
+.paginator .pageBox button{
   border: none;
   font-size: 13px;
   outline: none;
 }
 
-.activePage{
+.paginator .activePage{
   background-color: #87b5ff;
   color: #fff;
   font-weight: bold;

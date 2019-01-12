@@ -14,6 +14,9 @@ Simple React JS Pagination component. Can be easily customized with CSS objects
 
 ![alt text](screenshots/paginator_w_styles.png "React JS pagination")
 
+**How to thank me?**
+Just click on ⭐️ button :)
+
 # Installation
 
 Install it from npm and include it in your React build process (using Webpack, Browserify, etc).
@@ -85,6 +88,9 @@ Giving you as result:
 
 # What's new
 
+0.1.7
+* CSS updated to be isolated under `paginator` class
+
 0.1.5
 * Typecheck added, minor tweaking and styling changes
 
@@ -107,4 +113,4 @@ Giving you as result:
 
 # License 
 
-Licensed under the MIT License.
+Licensed under the MIT License © [jciccio](https://www.npmjs.com/~jciccio)
