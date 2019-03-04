@@ -88,6 +88,9 @@ Giving you as result:
 
 # What's new
 
+0.1.8
+* Background updated to be transparent
+
 0.1.7
 * CSS updated to be isolated under `paginator` class
 
