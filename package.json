@@ -1,6 +1,6 @@
 {
   "name": "react-js-paginator",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Simple react JS Paginator component, fully customizable with events callbacks to handle page changes",
   "main": "build/index.js",
   "peerDependencies": {

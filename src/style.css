@@ -14,6 +14,7 @@
   border: none;
   font-size: 13px;
   outline: none;
+  background: none;
 }
 
 .paginator .activePage{
