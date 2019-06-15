@@ -88,6 +88,9 @@ Giving you as result:
 
 # What's new
 
+0.1.10
+* Dependencies updated
+
 0.1.9
 * Proptypes added
 

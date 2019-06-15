@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Paginator from 'react-js-paginator';
 import './App.css';
-import logo from './logo.svg';
 
 class App extends Component {
 
