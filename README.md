@@ -88,6 +88,9 @@ Giving you as result:
 
 # What's new
 
+0.1.9
+* Proptypes added
+
 0.1.8
 * Background updated to be transparent
 

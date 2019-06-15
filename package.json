@@ -1,6 +1,6 @@
 {
   "name": "react-js-paginator",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Simple react JS Paginator component, fully customizable with events callbacks to handle page changes",
   "main": "build/index.js",
   "peerDependencies": {
@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "react": "^16.0.0",
-    "webpack": "^2.6.1"
+    "webpack": "^4.34.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -24,15 +24,16 @@
     "babel-core": "^6.26.3",
     "babel-eslint": "^6.1.2",
     "babel-loader": "^7.1.5",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.5.1",
     "babel-preset-react": "^6.3.13",
     "babel-preset-stage-1": "^6.24.1",
     "babel-register": "^6.3.13",
     "babel-runtime": "^6.3.19",
-    "style-loader": "^0.22.1",
     "css-loader": "^1.0.0",
     "react-dom": "^16.3.2",
-    "babel-polyfill": "^6.26.0"
+    "style-loader": "^0.22.1",
+    "webpack-cli": "^3.3.4"
   },
   "repository": {
     "type": "git",
