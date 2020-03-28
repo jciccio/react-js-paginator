@@ -88,36 +88,40 @@ Giving you as result:
 
 # What's new
 
-0.1.10
+### 0.2.0
+* Dependencies updated
+* Overall package size optimized
+
+### 0.1.10
 * Dependencies updated
 
-0.1.9
+### 0.1.9
 * Proptypes added
 
-0.1.8
+### 0.1.8
 * Background updated to be transparent
 
-0.1.7
+### 0.1.7
 * CSS updated to be isolated under `paginator` class
 
-0.1.5
+### 0.1.5
 * Typecheck added, minor tweaking and styling changes
 
-0.1.3
+### 0.1.3
 * Bug fixing: last page was not always being showed.
 
-0.1.1
+### 0.1.1
 * Fixed issue where maxPagesToDisplay was showing one more page than the prop number
 
-0.1.0
+### 0.1.0
 * New default style (less ugly)
 * Style customization properties enhanced
 
-0.0.8
+### 0.0.8
 * Added props to force first and last arrows
 * Added props to customize first and last symbols
 
-0.0.6
+### 0.0.6
 * Added functionality to hide arrows if first page or last page is visible
 
 # License 
